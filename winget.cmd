@@ -1,4 +1,7 @@
 @echo off
+setlocal ENABLEEXTENSIONS
 echo WinGet EarlyPreview ep0.1
 echo Still in early development!
-echo Developers is developmenting :D
+set arg=%1
+if %arg%==? goto :help
+if %arg%==h goto :help
